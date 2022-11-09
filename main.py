@@ -22,7 +22,7 @@ except IndexError:
   print("El índice de la lista se encuentra fuera del rango")
 
 
-#El error en este primer código es que no podemos encontrar la posición 11 de ls lista  ya que no está definida. Al ejecutarlo nos saltará el error "IndexError"; para solucinarlo utilizaremos "try" y "except". Dentro de la función "try" introduciremos aquello que queremos probar; si el resultado no se puede ejecutar directamente pasará al "except" donde, si el tipo de error, es el que nosotros hemos indicado se imprimirá por pantalla aquello que hay dentro del "except"
+#El error en este segundo código es que no podemos encontrar la posición 11 de ls lista  ya que no está definida. Al ejecutarlo nos saltará el error "IndexError"; para solucinarlo utilizaremos "try" y "except". Dentro de la función "try" introduciremos aquello que queremos probar; si el resultado no se puede ejecutar directamente pasará al "except" donde, si el tipo de error, es el que nosotros hemos indicado se imprimirá por pantalla aquello que hay dentro del "except"
 
 print("\n\n")
 
@@ -34,3 +34,8 @@ try:
   paises["alemania"]
 except KeyError:
   print("Clave no encontrada dentro del diccionario")
+
+
+#El error en este tercer código es que no podemos encontrar la clave alemania dentro del diccionario, por consiguiente no podemos encontrar su valor; ya que ninguno de los dos está definido. Al ejecutarlo nos saltará el error "KeyError"; para solucinarlo utilizaremos "try" y "except". Dentro de la función "try" introduciremos aquello que queremos probar; si el resultado no se puede ejecutar directamente pasará al "except" donde, si el tipo de error, es el que nosotros hemos indicado se imprimirá por pantalla aquello que hay dentro del "except"
+
+print("\n\n")
