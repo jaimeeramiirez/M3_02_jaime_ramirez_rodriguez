@@ -69,10 +69,14 @@ print("\n\n")
   # resultado= "2" + 10
   # El error en este bloque de código es que estamos tratando de sumar una cadena de texto con un número entero. Cuando ponemos entre comillas un número, el programa lo detecta como si fuera un "string" y no podemos sumarlo. Para arreglarlo haremos lo mismo que en los tres códigos anteriores.
 
-num1= "2"
-num2=10
+def suma(x,y):
+  try:
+    resultado=(x+y)
+  except TypeError:
+    print("*No se pudo realizar la operación debido a que los tipos de datos son incorrectos*")
+  else:
+    print(resultado)
+  return
 
-try:
-  resultado="2" + 10
-except TypeError:
-  print("*No se pudo realizar la operación debido a que los tipos de datos son incorrectos*")
+suma("2",10)
+suma(2, 10)
